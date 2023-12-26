@@ -1,0 +1,83 @@
+[
+    {
+        "id": 1,
+        "imagen": "",
+        "categoria": "",
+        "nombre": "",
+        "descripcion": "Descripción de producto A",
+        "precio": "50000"
+    },
+    {
+        "id": 2,
+        "imagen": "",
+        "categoria": "",
+        "nombre": "",
+        "descripcion": "Descripción de producto B",
+        "precio": "21000"
+    },
+    {
+        "id": 3,
+        "imagen": "",
+        "categoria": "",
+        "nombre": "",
+        "descripcion": "Descripción de producto C",
+        "precio": "12000"
+    },
+    {
+        "id": 4,
+        "imagen": "",
+        "categoria": "",
+        "nombre": "",
+        "descripcion": "Descripción de producto D",
+        "precio": "10000"
+    },
+    {
+        "id": 5,
+        "imagen": "",
+        "categoria": "",
+        "nombre": "",
+        "descripcion": "Descripción de producto E",
+        "precio": "7000"
+    },
+    {
+        "id": 6,
+        "imagen": "",
+        "categoria": "",
+        "nombre": "",
+        "descripcion": "Descripción de producto F",
+        "precio": "9500"
+    },
+    {
+        "id": 7,
+        "imagen": "",
+        "categoria": "",
+        "nombre": "",
+        "descripcion": "Descripción de producto F",
+        "precio": "9500"
+    },
+    {
+        "id": 8,
+        "imagen": "",
+        "categoria": "",
+        "nombre": "",
+        "descripcion": "Descripción de producto F",
+        "precio": "9500"
+    },
+    {
+        "id": 9,
+        "imagen": "",
+        "categoria": "",
+        "nombre": "",
+        "descripcion": "Descripción de producto F",
+        "precio": "9500"
+    },
+    {
+        "id": 10,
+        "imagen": "",
+        "categoria": "",
+        "nombre": "",
+        "descripcion": "Descripción de producto F",
+        "precio": "9500"
+    }
+
+]
