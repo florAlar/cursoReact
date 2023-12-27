@@ -4,6 +4,7 @@ export const pedirInfo = () => {
     return new Promise ((resolve, reject) => {
         setTimeout(() => {
             resolve(data);
+            console.log("funciono")
         }, 2000)
     })
 }

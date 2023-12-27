@@ -1,83 +1,84 @@
 [
     {
         "id": 1,
-        "imagen": "",
-        "categoria": "",
-        "nombre": "",
-        "descripcion": "Descripción de producto A",
+        "imagen": "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ffotos.jornaldocarro.estadao.com.br%2Fuploads%2F2020%2F01%2F31112429%2Fa1d89f5309854f840e5ee43c0f37096b.jpg&f=1&nofb=1&ipt=bc750a62f4a7dff8839ec7a1592258da37fb6997276645fad5cc8f9f0bd8fe39&ipo=images",
+        "categoria": "Honda",
+        "nombre": "CB650R",
+        "descripcion": "Descripción de producto Moto1",
         "precio": "50000"
     },
     {
         "id": 2,
-        "imagen": "",
-        "categoria": "",
-        "nombre": "",
+        "imagen": "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.mundomotero.com%2Fwp-content%2Fuploads%2F2015%2F11%2FYamaha-MT-10_25.jpg&f=1&nofb=1&ipt=a1e33abcbd2df6ae291ae611b729d530139e6b0c551f08d3e00cde81a887289c&ipo=images",
+        "categoria": "Yamaha",
+        "nombre": "MT10",
         "descripcion": "Descripción de producto B",
         "precio": "21000"
     },
     {
         "id": 3,
-        "imagen": "",
-        "categoria": "",
-        "nombre": "",
+        "imagen": "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fstorage.kawasaki.eu%2Fpublic%2Fkawasaki.eu%2Fen-EU%2Fmodel%2F19ZX1002G_201GN2DRF1CG_A_001.jpg&f=1&nofb=1&ipt=c6c12688a4449f5089ba2acc71a3575e7e67366989167ac29eb52fb24106bc23&ipo=images",
+        "categoria": "Kawasaki",
+        "nombre": "Ninja ZX-10RR",
         "descripcion": "Descripción de producto C",
         "precio": "12000"
     },
     {
         "id": 4,
-        "imagen": "",
-        "categoria": "",
-        "nombre": "",
+        "imagen": "https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2F2.bp.blogspot.com%2F-GN6C7-MGIL4%2FTV-Uhtq_BrI%2FAAAAAAAAAHU%2FiAeFp_xN4XA%2Fs1600%2F2011-Harley-Davidson-FLSTF%2BFatBoy-02.jpg&f=1&nofb=1&ipt=504591725a7e91f670c568b8e864ed38dbd358302a70e15a41955583e9736c32&ipo=images",
+        "categoria": "Harley Davidson",
+        "nombre": "FLSTF Fat Boy",
         "descripcion": "Descripción de producto D",
         "precio": "10000"
     },
     {
         "id": 5,
-        "imagen": "",
-        "categoria": "",
-        "nombre": "",
+        "imagen": "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fs1.cdn.autoevolution.com%2Fimages%2Fmoto_gallery%2FKAWASAKI-Versys-650-ABS-6812_2.jpg&f=1&nofb=1&ipt=08acc6887cf0bffcbe153927fef8220d233cc186393573cdb127d815a830ef62&ipo=images",
+        "categoria": "Kawasaki",
+        "nombre": "Versys 650",
         "descripcion": "Descripción de producto E",
-        "precio": "7000"
+        "precio": "450000"
     },
     {
         "id": 6,
-        "imagen": "",
-        "categoria": "",
-        "nombre": "",
+        "imagen": "https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2F4.bp.blogspot.com%2F-7nWbrYFnC9Q%2FUPiTnjhe9XI%2FAAAAAAAAHpI%2FCXdYAdmGzIU%2Fs1600%2F2013-Harley-Davidson-VRSCF-VRodMuscle3.jpg&f=1&nofb=1&ipt=cd4e5245b302f7cc1923eb10b569710d59a35fe1e3105e73a47e9f18795262d6&ipo=images",
+        "categoria": "Harley Davidson",
+        "nombre": "V-ROD",
         "descripcion": "Descripción de producto F",
         "precio": "9500"
     },
     {
         "id": 7,
-        "imagen": "",
-        "categoria": "",
-        "nombre": "",
+        "imagen": "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fcdn-0.totalmotorcycle.com%2Fwp-content%2Fuploads%2F2017%2F01%2F2017-Yamaha-YZF-R1e.jpg&f=1&nofb=1&ipt=f31ca48073fd5729e302054a85c0d413e4e650ede59b1df98e160e3824893ab8&ipo=images",
+        "categoria": "Yamaha",
+        "nombre": "R1",
         "descripcion": "Descripción de producto F",
         "precio": "9500"
     },
     {
         "id": 8,
-        "imagen": "",
-        "categoria": "",
-        "nombre": "",
+        "imagen": "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fcdn-0.totalmotorcycle.com%2Fwp-content%2Fuploads%2F2018%2F09%2F2019-Honda-Shadow-Phantom2.jpg&f=1&nofb=1&ipt=a9c95aa90c7b5842ba717d7ae2f6699acf0c0ac08f9dffaa66b040db491db5cb&ipo=images",
+        "categoria": "Honda",
+        "nombre": "Shadow 1100cc",
         "descripcion": "Descripción de producto F",
         "precio": "9500"
     },
     {
         "id": 9,
-        "imagen": "",
-        "categoria": "",
-        "nombre": "",
+        "imagen": "https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2F4.bp.blogspot.com%2F-M3qLmAl-GTw%2FVbJAdyTXf8I%2FAAAAAAABS2k%2FzNPY3g8IhBs%2Fs1600%2FHonda-CRF1000L-Africa-Twin3.jpg&f=1&nofb=1&ipt=5c69ee1f519ee8fc0a37b8848cf0737a25489bd3f457c0e91f2e1ac38bdbb6ab&ipo=images",
+        "categoria": "Honda",
+        "nombre": "Africa Twin",
         "descripcion": "Descripción de producto F",
         "precio": "9500"
     },
     {
         "id": 10,
-        "imagen": "",
-        "categoria": "",
-        "nombre": "",
+        "imagen": "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.moto-data.net%2Fmedia%2Fyamaha%2Fpics%2Fyamaha-wr450f-2017-2018%5B1%5D.jpg&f=1&nofb=1&ipt=e31a53da0439b6bcd3ec296152a03eed9d446db222c88c013cabf969098a4c7e&ipo=images",
+        "categoria": "Yamaha",
+        "nombre": "WR450F",
         "descripcion": "Descripción de producto F",
         "precio": "9500"
     }
 
 ]
+
