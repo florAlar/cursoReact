@@ -1,32 +1,57 @@
-import { React, useState } from 'react'
-import { Button } from '@chakra-ui/react'
+import { useContext, useState } from 'react';
+import { Button, ButtonGroup, IconButton, Center, } from '@chakra-ui/react';
+import { CartContext } from '../context/CartContext';
+import '../App.css'
 
-const ItemCount = () => {
-    const [contador, setContador] = useState(0)
+const ItemCount = ({ id, nombre, precio, imagen }) => {
+  const [cart, setCart] = useContext(CartContext);
+  const [counter, setCounter] = useState(1);
 
-    const mostrarMensaje = () => {
-        contador != 0 ? alert(`${contador} producto/s agregado/s a tu changuito`) : alert(`Tienes ${contador} producto/s en tu lista`)
+
+  const min = () => {
+    if (counter > 0) {
+      setCounter(counter - 1);
+    } else {
+      alert("No hay más productos para quitar del carrito.")
     }
+  };
 
-    const resta = () => contador > 0 && setContador(contador - 1)
+  const suma = () => {
+    setCounter(counter + 1);
+  };
 
+  const addToCart = () => {
+    setCart((cartAtm) => {
+      const alrdyIn = cartAtm.find((item) => item.id === id);
 
-    const suma = () => contador < 10 && setContador(contador + 1)
+      if (alrdyIn) {
+        return cartAtm.map((item) => {
+          if (item.id === id) {
+            return { ...item, stock: item.stock + counter }
+          } else {
+            return item
+          }
+        })
+      } else {
+        return [...cartAtm, { id, stock: counter, precio, nombre, imagen }]
+      }
+    })
+  }
 
+  
+  return (
+    <>
+      <ButtonGroup size="md" isAttached variant="outline">
+        <Button className='buttonsCount' onClick={min}>-</Button>
+        <Center>
+          <Button onClick={() => addToCart()} colorScheme="gray">
+            Añadir {counter} productos al carrito
+          </Button>
+        </Center>
+        <Button className='buttonsCount' onClick={suma} >+ </Button>
+      </ButtonGroup>
+    </>
+  );
+};
 
-    return (
-        <div>
-            <Button colorScheme='teal' size='xs' onClick={resta}>
-                -
-            </Button>
-            <Button onClick={mostrarMensaje} >
-                Agregar Al Carrito {contador}
-            </Button>
-            <Button colorScheme='teal' size='xs' onClick={suma}>
-                +
-            </Button>
-        </div>
-    )
-}
-
-export default ItemCount
+export default ItemCount;

@@ -2,6 +2,7 @@ import React from 'react'
 import { Flex, Spacer, Box, Heading, ButtonGroup, Button, Menu, MenuButton, MenuList, MenuItem } from '@chakra-ui/react'
 import CartWidget from './CartWidget'
 import { Link } from 'react-router-dom'
+import '../App.css'
 
 const NavBar = () => {
     return (
@@ -20,15 +21,15 @@ const NavBar = () => {
                             Marcas
                         </MenuButton>
                         <MenuList>
-                            <Link to='/categoria/Yamaha'><MenuItem>Yamaha</MenuItem></Link>
-                            <Link to='/categoria/Honda'><MenuItem>Honda</MenuItem></Link>
-                            <Link to='/categoria/Harley Davidson'><MenuItem>Harley Davidson</MenuItem></Link>
+                            <Link to='/category/Yamaha'><MenuItem>Yamaha</MenuItem></Link>
+                            <Link to='/category/Honda'><MenuItem>Honda</MenuItem></Link>
+                            <Link to='/category/Harley Davidson'><MenuItem>Harley Davidson</MenuItem></Link>
                             
-                            <Link to='/categoria/Kawasaki'><MenuItem>Kawasaki</MenuItem></Link>
+                            <Link to='/category/Kawasaki'><MenuItem>Kawasaki</MenuItem></Link>
                         </MenuList>
                     </Menu>
                     <Link to={'/cart'}>
-                    <Button colorScheme='teal'><CartWidget /></Button>
+                    <Button className='fondoCart' ><CartWidget /></Button>
                     </Link>
                 </ButtonGroup>
 

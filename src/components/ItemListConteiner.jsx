@@ -1,38 +1,47 @@
-import { React, useState, useEffect } from 'react'
-import ItemList from './ItemList'
-import { pedirInfo } from '../utils/pedirData'
-import { useParams } from 'react-router-dom'
-import { Flex,Wrap,WrapItem } from '@chakra-ui/react'
 
+
+import { useState, useEffect } from "react";
+import ItemList from "./ItemList";
+import { useParams } from "react-router-dom";
+import { collection, getDocs, getFirestore } from "firebase/firestore";
+import Loader from './Loader'
 
 const ItemListContainer = () => {
 
+  const [items, setItems] = useState([]);
+  const [loading, setLoading] = useState(true)
+  const { categoryId } = useParams()
 
-    const [productos, setProductos] = useState([])
-    const { categoria } = useParams()
+  useEffect(() => {
+    const fetchData = async () => {
+      const db = getFirestore();
 
-    useEffect(() => {
-        pedirInfo()
-            .then((res) => {
-                if (categoria) {
-                    setProductos(res.filter((prod) => prod.categoria === categoria))
-                } else {
-                    setProductos(res)
-                }
-            })
-    }, [categoria])
+      const itemsCollection = collection(db, "motos")
+      try {
+        const snapshot = await getDocs(itemsCollection);
+        const docs = snapshot.docs.map((doc) => ({
+          ...doc.data(),
+          id: doc.id,
+        }))
+        setItems(docs)
+        setLoading(false)
+      } catch (error) {
+        console.log("Error obteniendo información:", error)
+      }
+    }
+    fetchData()
+  }, [])
 
+  const filter = items.filter((item) => item.categoria === categoryId);
+  if (loading === true) {
+    return <Loader />
+  } else {
     return (
-        <Flex>
-            <Wrap>
-            <ItemList productos={productos} />
-            </Wrap>
-        </Flex>
+      <div>
+        {categoryId ? <ItemList items={filter} /> : <ItemList items={items} />}
+      </div>
     )
+  }
+};
 
-
-
-
-}
-
-export default ItemListContainer
+export default ItemListContainer;

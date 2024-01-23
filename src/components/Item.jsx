@@ -1,28 +1,32 @@
 import React from 'react'
-import { Card, CardBody, Stack, Heading, Text, Divider, CardFooter, Button } from '@chakra-ui/react'
+import { Card, CardBody, Stack, Heading, Text, Divider, CardFooter, Button, Center } from '@chakra-ui/react'
 import { Link } from 'react-router-dom'
+import '../App.css'
 
-const Item = ({ producto }) => {
+const Item = ({ id,nombre,categoria,imagen }) => {
     return (
 
 
-        <div>
+        <div className='cardTamaño' key={id}>
             <Card maxW='sm'>
                 <CardBody>
-                    <Stack mt='6' spacing='3'>                    
+                    <Stack className='.stackCardDetail' mt='6' spacing='3'>                    
                         <Text size='md' color='black'>
-                            <img src={producto.imagen} alt={producto.nombre} />
-                            <Text color='gray'> {producto.categoria}</Text>
-                            <p> {producto.nombre}</p>
+                            <img className='cardImage' src={imagen} alt={nombre} />
+                            <Text color='gray'> {categoria}</Text>
+                            <p> {nombre}</p>
                         </Text>                        
                     </Stack>
                 </CardBody>
-                <CardFooter>
-                    <Link to={`/item/${producto.id}`} >
-                        <Button>Ver más</Button>
+                <Center mb='10px' h='50px'>
+                    <Link to={`/item/${id}`} >
+                        <Center>
+                        <Button backgroundColor='#d8d8d8'>Ver más</Button>
+                        </Center>
+
                     </Link>
-                </CardFooter>
-                <Divider />
+                </Center>
+                
             </Card>
 
 
