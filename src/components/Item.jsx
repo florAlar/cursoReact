@@ -21,7 +21,7 @@ const Item = ({ id,nombre,categoria,imagen }) => {
                 <Center mb='10px' h='50px'>
                     <Link to={`/item/${id}`} >
                         <Center>
-                        <Button backgroundColor='#d8d8d8'>Ver más</Button>
+                        <Button backgroundColor='#17ec46'>Ver más</Button>
                         </Center>
 
                     </Link>

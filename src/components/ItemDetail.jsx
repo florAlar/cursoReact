@@ -28,8 +28,8 @@ const ItemDetail = ({ items }) => {
     return (
         <Center>
             {itemFilter.map((item) => (
-                <div key={item.id}>
-                    <Card className='card' align='center'
+                <div key={item.id} >
+                    <Card className='card' align='center' mt='50px'
                         direction={{ base: 'column', sm: 'row' }}
                         overflow='hidden'
                         variant='outline'

@@ -2,13 +2,14 @@ import React from 'react'
 import Item from './Item'
 import { SimpleGrid } from '@chakra-ui/react'
 import '../App.css'
-//falta un import?
+
 
 const ItemList = ({ items }) => {
     return (
+        <> 
 
-        
-            <SimpleGrid className='fullwidth' columns={3}  spacingX='20px' spacingY='20px' m='20px' >
+            
+            <SimpleGrid className='fullwidth' columns={3}  spacingX='15px' spacingY='15px' m='10px' mt='50px' >
                 {items?.map((item) => (
                     <Item
                         key={item.id}
@@ -23,7 +24,7 @@ const ItemList = ({ items }) => {
                     />
                 ))}
             </SimpleGrid>
-        
+            </>
     )
 }
 export default ItemList

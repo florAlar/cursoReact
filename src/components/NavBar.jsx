@@ -10,26 +10,26 @@ const NavBar = () => {
             <Flex className='navBar' minWidth='max-content' alignItems='center' gap='2'>
                 <Box p='2'>
                     <Link to={'/'}>
-                    <Heading size='md'>MotoShop</Heading>
+                        <img className='logo' src='../src/assets/logoMotoShop.png' alt='logo del ecommerce' />
                     </Link>
                 </Box>
 
                 <Spacer />
                 <ButtonGroup gap='2'>
-                    <Menu>
-                        <MenuButton >
+                    <Menu bg='#000000'>
+                        <MenuButton m='5' color='#ffffff'>
                             Marcas
                         </MenuButton>
-                        <MenuList>
-                            <Link to='/category/Yamaha'><MenuItem>Yamaha</MenuItem></Link>
-                            <Link to='/category/Honda'><MenuItem>Honda</MenuItem></Link>
-                            <Link to='/category/Harley Davidson'><MenuItem>Harley Davidson</MenuItem></Link>
-                            
-                            <Link to='/category/Kawasaki'><MenuItem>Kawasaki</MenuItem></Link>
+                        <MenuList color='#ffffff' bg='#000000'>
+                            <Link to='/category/Yamaha'><MenuItem bg='#000000'>Yamaha</MenuItem></Link>
+                            <Link to='/category/Honda'><MenuItem bg='#000000'>Honda</MenuItem></Link>
+                            <Link to='/category/Harley Davidson'><MenuItem bg='#000000'>Harley Davidson</MenuItem></Link>
+
+                            <Link to='/category/Kawasaki'><MenuItem bg='#000000'>Kawasaki</MenuItem></Link>
                         </MenuList>
                     </Menu>
                     <Link to={'/cart'}>
-                    <Button className='fondoCart' ><CartWidget /></Button>
+                        <Button color='#ffffff' bg='#000000' ><CartWidget /></Button>
                     </Link>
                 </ButtonGroup>
 

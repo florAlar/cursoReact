@@ -1,6 +1,6 @@
 import { useContext } from 'react';
 import { CartContext } from '../context/CartContext';
-import { Container, Card, Stack, Heading, CardFooter, Box, Button, Image, Text, ButtonGroup } from '@chakra-ui/react';
+import { Container, Card, Stack, Heading, CardFooter, Box, Button, Image, Text, ButtonGroup, Divider, Flex } from '@chakra-ui/react';
 import { Link } from 'react-router-dom'
 const Cart = () => {
     const [cart, setCart] = useContext(CartContext);
@@ -46,10 +46,11 @@ const Cart = () => {
         <Container maxW="xl" >
             <br />
             <br />
-            <Heading size="lg" color="black" mb={1}>
-                Tu Compra :
-            </Heading>
-            <p>Por favor verifica que todo este en orden</p>
+            <Flex alignItems='end' gap='5px'>
+            <Heading size="md" color="black" mb={1}>Esta Es Tu Compra </Heading>
+            <Text>Por favor verifica que <strong> todo </strong>  este en orden</Text>
+            </Flex>
+            
             <br />
             <br />
             {cart.map((item) => (
@@ -57,7 +58,7 @@ const Cart = () => {
 
                     <Card>
                         <Box className='horizontal' p={4} backgroundColor="#ffffff">
-                            <Image src={item.imagen} alt={item.nombre} width="40%" height="auto" />
+                            <Image src={item.imagen} alt={item.nombre} width="40%" height="50%" />
 
                             <Stack spacing={4}>
                                 <p color="#778751" size="md">
@@ -70,11 +71,11 @@ const Cart = () => {
                                 <CardFooter>
                                     <Stack>
                                         <p fontSize="lg" fontWeight="bold" color="teal.500" ml={4}>
-                                            ¿Quieres modificar tu compra?
+                                            ¿Quieres modificar la cantidad?
                                         </p>
                                         <ButtonGroup>
                                             <Button variant='outline' colorScheme="black" onClick={() => eraseOne(item.id)}>
-                                                Eliminar
+                                                Quitar
                                             </Button>
 
                                             <Button variant='outline' colorScheme="black" onClick={() => increaseOne(item.id)} ml={4}>
@@ -83,12 +84,13 @@ const Cart = () => {
                                         </ButtonGroup>
                                     </Stack>
                                 </CardFooter>
+                                
                             </Stack>
-
+                            
 
                         </Box>
                     </Card>
-
+                    <Divider/>
                 </Box>
             ))}
             <Text color="#778751" size="xl" m={4}>
@@ -96,11 +98,11 @@ const Cart = () => {
             </Text>
 
             
-            <Button variant='outline' m={4} colorScheme="teal" onClick={clearCart}>
+            <Button variant='outline' m={4} backgroundColor='gray' onClick={clearCart}>
                 Vaciar Carrito
             </Button>
             <Link to="/orden">
-                <Button m={4}  colorScheme="green">
+                <Button m={4}  backgroundColor='#17ec46'>
                     Confirmar compra
                 </Button>
             </Link>
