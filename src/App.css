@@ -199,3 +199,19 @@
 .footer{
   background-color: #202020;
 }
+
+.bannerPostHero{
+  background-color: #202020;
+  padding: 10px 0%;
+  color: #ededed;
+  text-align: center;
+  justify-content: center;
+}
+
+.imgHomeMenu{
+  filter: opacity(60%);
+}
+
+.imgHomeMenu:hover{
+  filter: opacity(100%);
+}
