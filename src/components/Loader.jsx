@@ -1,10 +1,12 @@
 
 import '../App.css'
-
+import {Center} from '@chakra-ui/react'
+ 
 
 const Loader = () => {
 
   return (
+    <Center alignItems='center'>
     <div className='spinnerPosition'>
     <div class="loader" size='lg'>
       <svg
@@ -49,6 +51,7 @@ const Loader = () => {
       <div class="road"></div>
     </div>
     </div>
+    </Center>
   )
 }
 
